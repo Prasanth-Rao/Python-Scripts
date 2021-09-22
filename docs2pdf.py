@@ -11,3 +11,4 @@ convert("sampledocx.docx", "path\\to\\output\\directory\\output.pdf")
 
 # Bulk conversion
 convert("path\\to\\directory\\containing\\docfiles")
+
