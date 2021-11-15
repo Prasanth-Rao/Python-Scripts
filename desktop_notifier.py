@@ -3,17 +3,23 @@
 
 from plyer import notification
 
-def plyer_notification():
+def plyer_notification(title, message, app_name, display_time):
      
      notification.notify(
-          title = "Plyer Title",               # | Notification Title
-          message = "From Plyer Notification", # | Notification Message
-          app_name = "TestApp",                # | Name of the App Launching this Notification
-          app_icon = None,                     # | Path to the .ico format of icon
-          timeout = 5                          # | Time to display the notification in secs. default is 10
+          title = title,           # | Notification Title
+          message = message,       # | Notification Message
+          app_name = app_name,     # | Name of the App Launching this Notification
+          app_icon = None,         # | Path to the .ico format of icon
+          timeout = display_time   # | Time to display the notification in secs. default is 10
      )
 
 
 if __name__ == '__main__':
-     plyer_notification()
+
+     title = "Plyer Title"
+     message = "From Plyer Notification"
+     app_name = "TestApp"
+     display_time = 5
+
+     plyer_notification(title, message, app_name, display_time)
 
